@@ -1,0 +1,19 @@
+#root {
+
+
+  text-align: center;
+}
+
+
+.nav-link {
+ 
+  margin-right: 15px; 
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
