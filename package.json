@@ -1,5 +1,5 @@
 {
-  "name": "camper",
+  "name": "camper-rental",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,6 @@
     "axios": "^1.7.3",
     "date-fns": "^3.6.0",
     "formik": "^2.4.6",
-  
     "modern-normalize": "^2.0.0",
     "node-fetch": "^3.3.2",
     "prop-types": "^15.8.1",
@@ -32,6 +31,9 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-react": "^7.24.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
