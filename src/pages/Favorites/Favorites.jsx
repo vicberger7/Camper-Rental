@@ -22,11 +22,12 @@ const Favorites = () => {
       {favoriteCampers.length === 0 && (
         <>
           <Title>
-            Схоже, ваш список улюблених зараз порожній. Для додавання кемперів
-            до ваших улюблених, відвідайте каталог, де ви можете знайти a список
-            кемперів. Звідти ви можете вибрати кемпери, які вам подобаються, і
-            додайте їх до своїх обраних, натиснувши кнопку «подобається». Один
-            раз ви додали кемпери до обраних, ви зможете їх переглядати тут.
+          It seems that your favorite list is currently empty. To add campers
+            to your favorites, please visit the catalog where you can find a
+            list of campers. From there, you can select the campers you like and
+            add them to your favorites by clicking on the like button. Once
+            you've added campers to your favorites, you'll be able to view them
+            here.
           </Title>
           <Picture src={camper} alt="camper" />
         </>

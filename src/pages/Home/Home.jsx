@@ -14,62 +14,62 @@ import {
 const Home = () => {
   return (
     <Container>
-      <Title>Ласкаво просимо на нашу платформу бронювання кемперів!</Title>
+      <Title>Welcome to Our Camper Booking Platform!</Title>
       <Description>
-        Ви готові до наступної пригоди? Годі шукати! Наша платформа бронювання
-        пропонує бездоганний досвід пошуку та бронювання ідеального кемперу для
-        вашої подорожі. Незалежно від того, чи плануєте ви у вихідні відпочинок,
-        подорож по пересіченій місцевості або експедиція на природі - у нас є
-        все, що вам потрібно.
+        Are you ready for your next adventure? Look no further! Our camper
+        booking platform offers a seamless experience for finding and booking
+        the perfect camper for your journey. Whether you're planning a weekend
+        getaway, a cross-country road trip, or an outdoor expedition, we've got
+        you covered.
       </Description>
       <BenefitsImageWrapper>
         <SectionWrapper>
           <section>
-            <Benefits>Ознайомтеся з широким асортиментом кемперів</Benefits>
+            <Benefits>Explore a Wide Range of Campers</Benefits>
             <Description>
-              Відкрийте для себе різноманітний вибір кемперів, розроблених для
-              кожної потреби мандрівника. Від затишних фургонів для
-              індивідуальних авантюристів до просторих автобудинків для
-              сімейного відпочинку. У нас є щось для кожного. Перегляньте наш
-              каталог кемперів, кожен з яких оснащений необхідними зручностями
-              та готовий забезпечити вам незабутню подорож.
+              Discover a diverse selection of campers tailored to suit every
+              traveler's needs. From cozy vans for solo adventurers to spacious
+              RVs for family vacations, we have something for everyone. Browse
+              through our extensive catalog of campers, each equipped with
+              essential amenities and ready to take you on an unforgettable
+              journey.
             </Description>
-            <Benefits>Простий процес бронювання</Benefits>
+            <Benefits>Hassle-Free Booking Process</Benefits>
             <Description>
-              Забронювати кемпер вашої мрії швидко й легко за допомогою нашої
-              зручної платформи. Просто знайдіть потрібне місце, виберіть дати
-              подорожі та знайдіть доступні кемпери, які відповідають вашим
-              критеріям. Завдяки прозорим ціноутворенням, детальним описам і
-              високоякісним зображенням ви можете приймати зважені рішення та
-              впевнено бронювати.
+              Booking your dream camper is quick and easy with our user-friendly
+              platform. Simply search for your desired location, select your
+              travel dates, and explore available campers that match your
+              criteria. With transparent pricing, detailed descriptions, and
+              high-quality images, you can make informed decisions and book with
+              confidence.
             </Description>
           </section>
           <Picture src={camperImg} alt="camper" />
         </SectionWrapper>
         <SectionWrapperTwo>
           <section>
-            <Benefits>Відчуйте свободу та гнучкість</Benefits>
+            <Benefits>Embrace Freedom and Flexibility</Benefits>
             <Description>
-              Взявши напрокат кемпер, ви можете вільно подорожувати у своєму
-              власному темпі та досліджувати бездоріжжя. Попрощайтеся з
-              жорсткими маршрутами та привіт спонтанності! Відчуйте радість
-              прокидатися з захоплюючими краєвидами, готувати їжу просто неба та
-              створювати приємні спогади з близькими людьми.
+              With a camper rental, you have the freedom to travel at your own
+              pace and explore off-the-beaten-path destinations. Say goodbye to
+              rigid itineraries and hello to spontaneity! Experience the joy of
+              waking up to breathtaking views, cooking meals in the great
+              outdoors, and creating cherished memories with loved ones.
             </Description>
-            <Benefits>Бронюйте з упевненістю</Benefits>
+            <Benefits>Book with Confidence</Benefits>
             <Description>
-              Будьте впевнені, знаючи, що ваш кемпер у надійних руках. Наша
-              платформа надає перевагу задоволенню клієнтів, надійності та
-              зручності. Незалежно від того, чи ви досвідчений кемпер, чи
-              новачок у світі подорожей на природі, наша команда тут, щоб
-              підтримати вас на кожному кроці.
+              Rest assured knowing that your camper booking is in safe hands.
+              Our platform prioritizes customer satisfaction, reliability, and
+              convenience. Whether you're a seasoned camper or new to the world
+              of outdoor travel, our team is here to support you every step of
+              the way.
             </Description>
-            <Benefits>Почніть свою пригоду сьогодні!</Benefits>
+            <Benefits>Start Your Adventure Today!</Benefits>
             <Description>
-              Чи готові ви вирушити у свою наступну пригоду? Почніть планувати
-              свою подорож разом з нами та відкрийте безмежні можливості на
-              відкритій дорозі. Забронюйте кемпер сьогодні та готуйтеся відчути
-              повну свободу подорожей.
+              Are you ready to embark on your next adventure? Start planning
+              your journey with us and unlock endless possibilities on the open
+              road. Book your camper today and get ready to experience the
+              ultimate freedom of travel.
             </Description>
           </section>
           <Picture src={camperImgThree} alt="camper" />
