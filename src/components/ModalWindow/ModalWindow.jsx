@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Modal from 'react-modal';
 import {
   AdditionalNavigation,
@@ -18,7 +19,7 @@ import {
 } from './ModalWindow.styled';
 import sprite from '../../assets/sprite.svg';
 import { Outlet, useParams } from 'react-router-dom';
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getCampersById } from '../../redux/catalog/operations';
 
@@ -40,16 +41,55 @@ const customStyles = {
   },
 };
 
+const ImageModal = ({ isOpen, onRequestClose, imageSrc }) => {
+  return (
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      style={{
+        ...customStyles,
+        content: {
+          ...customStyles.content,
+          width: '80%',  // Make this modal narrower for better image fit
+          height: '80%', // Make it taller to better display the image
+          padding: '10px',
+        },
+      }}
+    >
+      <div style={{ textAlign: 'center' }}>
+        <img src={imageSrc} alt="Enlarged view" style={{ width: '100%', height: 'auto' }} />
+      </div>
+    </Modal>
+  );
+};
+
+
+
+
+
 const ModalWindow = ({ isOpen, onRequestClose, camperInfo, pathForModal }) => {
   const { camperId } = useParams();
   const dispatch = useDispatch();
 
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);  // State for image modal
+const [selectedImage, setSelectedImage] = useState('');  // Store selected image
+
   useEffect(() => {
     dispatch(getCampersById(camperId));
-  }, []);
+  }, [camperId, dispatch]);
 
   const { name, price, rating, location, description, gallery, reviews } =
     camperInfo;
+
+    const handleImageClick = (imageUrl) => {
+      setSelectedImage(imageUrl);  // Set the image to be displayed in the modal
+      setIsImageModalOpen(true);  // Open the image modal
+    };
+    
+    const handleCloseImageModal = () => {
+      setIsImageModalOpen(false);  // Close the image modal
+    };
+    
   return (
     <div>
       <Modal
@@ -84,9 +124,20 @@ const ModalWindow = ({ isOpen, onRequestClose, camperInfo, pathForModal }) => {
             </Price>
 
             <ImageWrapper>
-              <Image src={gallery[0]} alt={name} />
+
+              {/* <Image src={gallery[0]} alt={name} />
               <Image src={gallery[1]} alt={name} />
-              <Image src={gallery[2]} alt={name} />
+              <Image src={gallery[2]} alt={name} /> */}
+
+{gallery.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt={name}
+                  onClick={() => handleImageClick(image)} // Trigger the image modal on click
+                />
+              ))}
+
             </ImageWrapper>
             <Description>{description}</Description>
           </div>
@@ -103,6 +154,14 @@ const ModalWindow = ({ isOpen, onRequestClose, camperInfo, pathForModal }) => {
           </Suspense>
         </ContentWrapper>
       </Modal>
+
+         {/* Image Modal for Enlarged View */}
+         <ImageModal
+        isOpen={isImageModalOpen}
+        onRequestClose={handleCloseImageModal}
+        imageSrc={selectedImage}
+      />
+
     </div>
   );
 };

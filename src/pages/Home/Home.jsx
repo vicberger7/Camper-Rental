@@ -18,8 +18,8 @@ const Home = () => {
       <Description>
         Are you ready for your next adventure? Look no further! Our camper
         booking platform offers a seamless experience for finding and booking
-        the perfect camper for your journey. Whether you're planning a weekend
-        getaway, a cross-country road trip, or an outdoor expedition, we've got
+        the perfect camper for your journey. Whether you&apos;re planning a weekend
+        getaway, a cross-country road trip, or an outdoor expedition, we&apos;ve got
         you covered.
       </Description>
       <BenefitsImageWrapper>
@@ -28,7 +28,7 @@ const Home = () => {
             <Benefits>Explore a Wide Range of Campers</Benefits>
             <Description>
               Discover a diverse selection of campers tailored to suit every
-              traveler's needs. From cozy vans for solo adventurers to spacious
+              traveler&apos;s needs. From cozy vans for solo adventurers to spacious
               RVs for family vacations, we have something for everyone. Browse
               through our extensive catalog of campers, each equipped with
               essential amenities and ready to take you on an unforgettable
@@ -60,7 +60,7 @@ const Home = () => {
             <Description>
               Rest assured knowing that your camper booking is in safe hands.
               Our platform prioritizes customer satisfaction, reliability, and
-              convenience. Whether you're a seasoned camper or new to the world
+              convenience. Whether you&apos;re a seasoned camper or new to the world
               of outdoor travel, our team is here to support you every step of
               the way.
             </Description>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import { ButtonLikeWrapper, IconLike, IconLikeUse } from './ButtonLike.styled';
 import sprite from '../../assets/sprite.svg';

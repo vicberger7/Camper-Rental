@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import sprite from '../../assets/sprite.svg';
 
@@ -42,6 +43,8 @@ export const CampersItem = ({ camper, pathForModal }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+ 
+
   const handleOpenModal = () => {
     setIsModalOpen(true);
     document.body.style.overflow = 'hidden';
@@ -58,7 +61,13 @@ export const CampersItem = ({ camper, pathForModal }) => {
   return (
     <>
       <Item key={_id}>
-        <Image src={gallery[0]} alt={name} width={290} height={310} />
+        <Image 
+        src={gallery[0]} 
+        alt={name} 
+        width={290} 
+        height={310}
+       
+         />
         <div>
           <NamePriceLine>
             <Name>{name}</Name>
@@ -151,6 +160,9 @@ export const CampersItem = ({ camper, pathForModal }) => {
           pathForModal={pathForModal}
         />
       )}
+
+    
+
     </>
   );
 };
